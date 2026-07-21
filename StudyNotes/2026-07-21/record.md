@@ -28,7 +28,7 @@ Checked script usage:
 
 ```bash
 
-python record\_sim\_episodes.py --help
+python record_sim_episodes.py --help
 
 ```
 
@@ -38,11 +38,11 @@ Required arguments:
 
 
 
-* `--task\_name`
+* `--task_name`
 
-* `--dataset\_dir`
+* `--dataset_dir`
 
-* `--num\_episodes`
+* `--num_episodes`
 
 
 
@@ -52,7 +52,7 @@ Checked README:
 
 ```bash
 
-grep -n "sim\_transfer\_cube" README.md
+grep -n "sim_transfer_cube" README.md
 
 ```
 
@@ -64,7 +64,7 @@ Selected task:
 
 ```
 
-sim\_transfer\_cube\_scripted
+sim_transfer_cube_scripted
 
 ```
 
@@ -76,7 +76,7 @@ Because the cloud server has no display:
 
 ```bash
 
-export MUJOCO\_GL=egl
+export MUJOCO_GL=egl
 
 ```
 
@@ -88,13 +88,13 @@ Generated one simulation episode:
 
 ```bash
 
-python record\_sim\_episodes.py \\
+python record_sim_episodes.py \\
 
-&#x20; --task\_name sim\_transfer\_cube\_scripted \\
+&#x20; --task_name sim_transfer_cube_scripted \\
 
-&#x20; --dataset\_dir ./data/sim\_transfer\_cube\_scripted \\
+&#x20; --dataset_dir ./data/sim_transfer_cube_scripted \\
 
-&#x20; --num\_episodes 1
+&#x20; --num_episodes 1
 
 ```
 
@@ -104,7 +104,7 @@ Result:
 
 
 
-Successfully generated: ./data/sim\_transfer\_cube\_scripted/episode\_0.hdf5
+Successfully generated: ./data/sim_transfer_cube_scripted/episode_0.hdf5
 
 
 
@@ -202,17 +202,17 @@ Interpretation:
 
 
 
-&#x20; \* qpos: 14
+&#x20; * qpos: 14
 
-&#x20; \* qvel: 14
+&#x20; * qvel: 14
 
 * Camera:
 
 
 
-&#x20; \* 400 RGB images
+&#x20; * 400 RGB images
 
-&#x20; \* resolution: 480×640
+&#x20; * resolution: 480×640
 
 
 
@@ -234,7 +234,7 @@ Completed:
 
 ✅ PyTorch CUDA verification
 
-✅ MuJoCo/dm\_control import check
+✅ MuJoCo/dm_control import check
 
 ✅ Generated first simulation episode
 
@@ -246,9 +246,9 @@ Next:
 
 
 
-1\. Inspect image content and action values.
+1. Inspect image content and action values.
 
-2\. Understand ACT dataset loading (`EpisodicDataset`).
+2. Understand ACT dataset loading (`EpisodicDataset`).
 
-3\. Run minimal ACT training smoke test.
+3. Run minimal ACT training smoke test.
 
