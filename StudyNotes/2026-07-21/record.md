@@ -1,12 +1,12 @@
-\# Record｜2026-07-21
+# Record｜2026-07-21
 
 
 
-\## Generate first simulation episode
+## Generate first simulation episode
 
 
 
-\### Goal
+### Goal
 
 Complete the first ACT simulation data generation pipeline:
 
@@ -14,11 +14,11 @@ Cloud environment → ACT environment → MuJoCo simulation → HDF5 episode dat
 
 
 
-\---
+---
 
 
 
-\### ACT Simulation Data Generation
+### ACT Simulation Data Generation
 
 
 
@@ -38,11 +38,11 @@ Required arguments:
 
 
 
-\* `--task\_name`
+* `--task\_name`
 
-\* `--dataset\_dir`
+* `--dataset\_dir`
 
-\* `--num\_episodes`
+* `--num\_episodes`
 
 
 
@@ -112,11 +112,11 @@ File size:352 MB
 
 
 
-\---
+---
 
 
 
-\### HDF5 Data Structure Inspection
+### HDF5 Data Structure Inspection
 
 
 
@@ -194,11 +194,11 @@ Interpretation:
 
 
 
-\* Episode length: 400 timesteps
+* Episode length: 400 timesteps
 
-\* Action dimension: 14
+* Action dimension: 14
 
-\* Robot state dimension:
+* Robot state dimension:
 
 
 
@@ -206,7 +206,7 @@ Interpretation:
 
 &#x20; \* qvel: 14
 
-\* Camera:
+* Camera:
 
 
 
@@ -216,11 +216,11 @@ Interpretation:
 
 
 
-\---
+---
 
 
 
-\### Current Status
+### Current Status
 
 
 
